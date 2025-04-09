@@ -13,6 +13,6 @@ fetch(usersApi)
   .then((response) => response.json())
   .then((data) => {
     data.forEach((user) => {
-      usersList.innerHTML += `<li>${user.username}</li>`
+      usersList.innerHTML += `<li>${user.name}</li>`
     })
   })
